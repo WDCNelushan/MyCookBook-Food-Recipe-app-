@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -18,7 +19,7 @@
             android:elevation="4dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">>
+            app:layout_constraintEnd_toEndOf="parent">
 
             <ImageButton
                 android:id="@+id/btnBack"
@@ -74,14 +75,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="#1e1e1e"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    app:cardBackgroundColor="@color/secondary3"
+                    app:cardCornerRadius="12dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:contentDescription="Recipe"
                         android:scaleType="centerCrop"
                         android:src="@drawable/chikenbiriyani" />
 
@@ -89,16 +88,15 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="16dp"
-                    android:layout_marginTop="16dp" />
+                    android:layout_height="8dp"
+                    android:layout_marginTop="12dp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    app:cardBackgroundColor="#1e1e1e"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    app:cardBackgroundColor="@color/secondary3"
+                    app:cardCornerRadius="12dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -110,10 +108,10 @@
                             android:id="@+id/tvName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Chicken Biryani"
+                            android:text="Sri Lankan Chicken Biryani"
                             android:textSize="24sp"
                             android:textStyle="bold"
-                            android:textColor="#FFFFFF"
+                            android:textColor="@color/secondary"
                             android:gravity="center" />
 
                         <!-- Description -->
@@ -138,40 +136,32 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="end"
-                            android:layout_marginTop="16dp">
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp">
 
                             <Button
                                 android:id="@+id/btnWriteReview"
-                                android:layout_width="50dp"
+                                android:layout_width="73dp"
                                 android:layout_height="50dp"
                                 android:layout_gravity="center"
                                 android:background="@color/action2"
                                 android:padding="4dp"
-                                android:paddingStart="16dp"
-                                android:paddingEnd="16dp"
-                                android:text="+"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:text="ADD"
                                 android:textColor="@color/secondary"
-                                android:textSize="25sp"
-                                app:backgroundTint="@null"/>
+                                android:textSize="20sp"
+                                app:backgroundTint="@null" />
                         </LinearLayout>
 
-                        <!-- Review 1 -->
-                        <androidx.cardview.widget.CardView
+
+
+                        <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardBackgroundColor="#2a2a2a">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:contentDescription="Recipe"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ratingBar" />
-                        </androidx.cardview.widget.CardView>
-
-
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ratingBar"
+                            android:layout_marginBottom="8dp" />
 
                         <!-- Review 1 -->
                         <androidx.cardview.widget.CardView
@@ -200,7 +190,7 @@
                                         android:layout_height="wrap_content"
                                         android:text="John D."
                                         android:textSize="16sp"
-                                        android:textColor="#FFFFFF"
+                                        android:textColor="@color/secondary"
                                         android:layout_marginEnd="8dp" />
 
                                     <RatingBar
@@ -208,9 +198,8 @@
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
                                         android:rating="5"
-                                        android:stepSize="0.5"
                                         android:isIndicator="true"
-                                        android:progressTint="#FFD700"
+                                        android:progressTint="@color/action1"
                                         android:secondaryProgressTint="#FFD700"
                                         android:progressBackgroundTint="#444444" />
                                 </LinearLayout>
@@ -248,170 +237,229 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center_vertical">
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Priya M."
+                                        android:textSize="16sp"
+                                        android:textColor="@color/secondary"
+                                        android:layout_marginEnd="8dp" />
+
+                                    <RatingBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:progressTint="@color/action1"
+                                        android:secondaryProgressTint="#FFD700"
+                                        android:progressBackgroundTint="#444444" />
+                                </LinearLayout>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Priya M."
-                                    android:textSize="16sp"
-                                    android:textColor="#FFFFFF"
-                                    android:layout_marginEnd="8dp" />
+                                    android:text="1 week ago"
+                                    android:textSize="12sp"
+                                    android:textColor="#AAAAAA"
+                                    android:layout_marginTop="4dp" />
 
-                                <RatingBar
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:numStars="5"
-                                    android:rating="5"
-                                    android:stepSize="0.5"
-                                    android:isIndicator="true"
-                                    android:progressTint="#FFD700"
-                                    android:secondaryProgressTint="#FFD700"
-                                    android:progressBackgroundTint="#444444" />
+                                    android:text="Authentic Sri Lankan taste! The dum cooking method locks in flavor. Highly recommend."
+                                    android:textSize="14sp"
+                                    android:textColor="#CCCCCC"
+                                    android:layout_marginTop="8dp"
+                                    android:lineSpacingExtra="4sp" />
                             </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="1 week ago"
-                                android:textSize="12sp"
-                                android:textColor="#AAAAAA"
-                                android:layout_marginTop="4dp" />
+                        <!-- Review 3 -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardBackgroundColor="#2a2a2a">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Authentic Sri Lankan taste! The dum cooking method locks in flavor. Highly recommend."
-                                android:textSize="14sp"
-                                android:textColor="#CCCCCC"
-                                android:layout_marginTop="8dp"
-                                android:lineSpacingExtra="4sp" />
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Alex K."
+                                        android:textSize="16sp"
+                                        android:textColor="#FFFFFF"
+                                        android:layout_marginEnd="8dp" />
+
+                                    <RatingBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="4"
+                                        android:stepSize="0.5"
+                                        android:isIndicator="true"
+                                        android:progressTint="#FFD700"
+                                        android:secondaryProgressTint="#FFD700"
+                                        android:progressBackgroundTint="#444444" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3 weeks ago"
+                                    android:textSize="12sp"
+                                    android:textColor="#AAAAAA"
+                                    android:layout_marginTop="4dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Great recipe! Took time but worth it. Served with raita — perfect combo."
+                                    android:textSize="14sp"
+                                    android:textColor="#CCCCCC"
+                                    android:layout_marginTop="8dp"
+                                    android:lineSpacingExtra="4sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                        </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
-        <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/secondary3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Ingredient Tab -->
         <LinearLayout
-            android:id="@+id/bottomNav"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#000000"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:id="@+id/btnIngredients"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
 
-            <!-- Home Tab -->
-            <LinearLayout
-                android:id="@+id/btnHome"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_ingrediants"
+                app:tint="@color/secondary" />
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_ingrediants"
-                    android:contentDescription="Home"
-                    app:tint="@color/action2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ingrediants"
-                    android:textColor="@color/action2"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- Category Tab -->
-            <LinearLayout
-                android:id="@+id/btnCategory"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_instructions"
-                    android:contentDescription="Category"
-                    app:tint="@color/secondary" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Instructions"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- MyRecipe Tab -->
-            <LinearLayout
-                android:id="@+id/btnMyRecipe"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_reviews"
-                    android:contentDescription="My Recipe"
-                    app:tint="#FFFFFF" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Reviews"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- Profile Tab -->
-            <LinearLayout
-                android:id="@+id/btnProfile"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_about"
-                    android:contentDescription="Profile"
-                    app:tint="#FFFFFF" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="About"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrediants"
+                android:textColor="@color/secondary"
+                android:textSize="12sp" />
         </LinearLayout>
+
+        <!-- Instructions Tab -->
+        <LinearLayout
+            android:id="@+id/btnInstructions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_instructions"
+                app:tint="@color/secondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:textColor="@color/secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Reviews Tab -->
+        <LinearLayout
+            android:id="@+id/btnReviews"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_reviews"
+                app:tint="@color/action2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textColor="@color/action2"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- About Tab -->
+        <LinearLayout
+            android:id="@+id/btnAbout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_about"
+                app:tint="@color/secondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="@color/secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
