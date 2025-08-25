@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Black Circle Background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/secondary3" />
+            <size
+                android:width="48dp"
+                android:height="48dp" />
+        </shape>
+    </item>
+
+    <!-- Orange Back Arrow -->
+    <item
+        android:drawable="@drawable/ic_arrow_back"
+        android:width="24dp"
+        android:height="24dp"
+        android:gravity="center">
+
+    </item>
+
+</layer-list>

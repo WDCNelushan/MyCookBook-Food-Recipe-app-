@@ -12,6 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCookBookRecipeFinderApp">
         <activity
+            android:name=".AboutPage"
+            android:exported="false" />
+        <activity
+            android:name=".MyRecipePage"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewsPage"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeInstructionPage"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeIngrediantPage"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +56,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
