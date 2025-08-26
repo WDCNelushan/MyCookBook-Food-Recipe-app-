@@ -27,6 +27,13 @@ class CategoryPage : AppCompatActivity() {
             finish()
         }
 
+        val ViewRecipe= findViewById<LinearLayout>(R.id.goToRecipePage)
+        ViewRecipe.setOnClickListener {
+            startActivity(Intent(this, RecipeIngrediantPage::class.java))
+            finish()
+        }
+
+
         val back= findViewById<ImageButton>(R.id.btnBack)
         back.setOnClickListener {
             startActivity(Intent(this, HomePage::class.java))

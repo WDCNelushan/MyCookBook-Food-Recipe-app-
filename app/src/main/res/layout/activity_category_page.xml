@@ -200,6 +200,7 @@
                 app:cardCornerRadius="12dp">
 
                 <LinearLayout
+                    android:id="@+id/goToRecipePage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_background2"
@@ -222,10 +223,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
+                            android:gravity="center"
                             android:maxLines="2"
                             android:text="Sri Lankan Chicken Biryani"
                             android:textColor="@color/secondary"
-                            android:gravity="center"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -567,14 +568,13 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_home"
-                android:contentDescription="Home"
-                app:tint="#FFFFFF" />
+                app:tint="@color/secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/secondary"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -593,14 +593,13 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_category"
-                android:contentDescription="Category"
-                app:tint="#FF5722" />
+                app:tint="@color/action2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Category"
-                android:textColor="#FF5722"
+                android:textColor="@color/action2"
             android:textSize="12sp" />
         </LinearLayout>
 
@@ -619,14 +618,13 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_myrecipes"
-                android:contentDescription="My Recipe"
-                app:tint="#FFFFFF" />
+                app:tint="@color/secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Recipies"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/secondary"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -645,15 +643,15 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_profile"
-                android:contentDescription="Profile"
-                app:tint="#FFFFFF" />
+                app:tint="@color/secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/secondary"
                 android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
