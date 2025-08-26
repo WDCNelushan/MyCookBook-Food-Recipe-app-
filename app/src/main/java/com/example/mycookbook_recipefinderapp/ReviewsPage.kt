@@ -44,10 +44,5 @@ class ReviewsPage : AppCompatActivity() {
             finish()
         }
 
-        val about= findViewById<LinearLayout>(R.id.btnAbout)
-        about.setOnClickListener {
-            startActivity(Intent(this, AboutPage::class.java))
-            finish()
-        }
     }
 }

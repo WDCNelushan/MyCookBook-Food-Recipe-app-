@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCookBookRecipeFinderApp">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
             android:name=".AboutPage"
             android:exported="false" />
         <activity
@@ -25,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".RecipeInstructionPage"
-            android:exported="false" />
-        <activity
-            android:name=".ForgotPassword"
             android:exported="false" />
         <activity
             android:name=".RecipeIngrediantPage"

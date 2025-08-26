@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,7 +30,7 @@ class HomePage : AppCompatActivity() {
             finish()
         }
 
-        val btnChickenBiryani= findViewById<Button>(R.id.chickenBiryani)
+        val btnChickenBiryani= findViewById<CardView>(R.id.chickenBiryani)
         btnChickenBiryani.setOnClickListener {
             startActivity(Intent(this, RecipeIngrediantPage::class.java))
             finish()
