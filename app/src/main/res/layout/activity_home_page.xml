@@ -73,6 +73,7 @@
                 android:drawablePadding="8dp"
                 android:hint="Search recipe or ingredients"
                 android:textColorHint="@color/secondary"
+                android:textColor="@color/secondary"
                 android:padding="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -89,6 +89,7 @@
             android:drawableEnd="@drawable/ic_search"
             android:drawablePadding="8dp"
             android:background="@color/secondary3"
+            android:textColor="@color/secondary"
             android:padding="12dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
